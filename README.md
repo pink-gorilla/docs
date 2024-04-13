@@ -17,4 +17,5 @@
 ```
   Open Browser on Port 8080
 
-A simple notebook viewer is on [Docs Github Pages](https://pink-gorilla.github.io/docs/)
+Notebook viewer with examples how to use ui render functions 
+is on [Docs Github Pages](https://pink-gorilla.github.io/docs/)
