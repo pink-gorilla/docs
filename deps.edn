@@ -2,7 +2,7 @@
          "resources"
          "target/webly"]
  :deps {org.pinkgorilla/webly {:mvn/version "0.5.662"}
-
+        org.pinkgorilla/pinkie {:mvn/version "0.5.231"}
         org.pinkgorilla/clj-service {:mvn/version "0.2.7"}
         org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         ;; dev tools/testing
