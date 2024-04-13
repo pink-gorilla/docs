@@ -1,0 +1,75 @@
+{:paths ["src"
+         "resources"
+         "target/webly"]
+ :deps {org.pinkgorilla/webly {:mvn/version "0.5.661"}
+
+        org.pinkgorilla/clj-service {:mvn/version "0.2.7"}
+        org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
+        ;; dev tools/testing
+        org.pinkgorilla/reval {:mvn/version "0.6.145"}
+        ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
+        org.pinkgorilla/ui-binaryclock  {:mvn/version "0.0.14"}
+        ;; "ui design in general"
+        org.pinkgorilla/ui-repl {:mvn/version "0.1.93"} ; reagent, format, page-nav,...
+        org.pinkgorilla/ui-tailwind {:mvn/version "0.0.5"}
+        org.pinkgorilla/ui-fonts {:mvn/version "0.0.3"}
+        org.pinkgorilla/ui-site {:mvn/version "0.0.29"} ; menu
+        org.pinkgorilla/ui-input {:mvn/version "0.2.42"} ; react-spaces rnd ...
+        ;; "code-editor/viewer"
+        org.pinkgorilla/ui-codemirror {:mvn/version "0.1.47"}
+        org.pinkgorilla/ui-highlightjs {:mvn/version "0.0.9"}
+        ;; "tables"
+        org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.562"} ; sci dep
+        ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
+        org.pinkgorilla/ui-aggrid {:mvn/version "0.1.21"}
+        org.pinkgorilla/reagent-table {:mvn/version "0.0.14"}
+        org.pinkgorilla/options {:mvn/version "0.0.10"}
+        ; ""charts"
+        org.pinkgorilla/ui-vega  {:mvn/version "0.2.216"}
+        org.pinkgorilla/ui-highcharts {:mvn/version "0.0.28"}
+        org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
+        org.pinkgorilla/ui-leaflet {:mvn/version "0.1.20"}
+        org.pinkgorilla/ui-echarts {:mvn/version "0.0.3"}
+        org.pinkgorilla/ui-sparklines {:mvn/version "0.0.4"}
+        ;org.pinkgorilla/ui-video {:mvn/version "0.0.4"} ; now creates compile issues.
+
+        ;org.pinkgorilla/ui-math {:mvn/version "0.0.7"}
+        ; non lazy deps
+        ;org.pinkgorilla/ui-quil  {:mvn/version "0.1.7"} ; not bundeled (too big)
+        ; run by default in goldly-docs-services
+        nrepl/nrepl {:mvn/version "1.0.0"}
+        cider/cider-nrepl {:mvn/version "0.28.3"}}
+
+ :aliases
+ {:build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}
+                 slipset/deps-deploy {:mvn/version "0.2.1"}
+                 io.github.seancorfield/build-clj {:git/tag "v0.5.4" :git/sha "bc9c0cc"}
+                 babashka/fs {:mvn/version "0.0.5"}}
+          :ns-default build
+          :jvm-opts ["-Dmaven.wagon.rto=90000"]}
+
+; demo ui
+  :webly {:exec-fn webly.app.app/webly-build
+          :exec-args {:config ["docs/docs-config.edn"]
+                      :profile "npm-install"}}
+
+  :npm-install {:exec-args {:profile "npm-install"}}
+  :compile {:exec-args {:profile "compile2"}}
+  :release {:exec-args {:profile "release"}}
+  :release-adv {:exec-args {:profile "release-adv"}}
+  :static {:exec-args {:profile "static"}}
+  :ci {:exec-args {:profile "ci"}}
+
+  :run {:exec-fn modular.system/start!
+        :exec-args {:profile "jetty"
+                    :config  ["docs/docs-config.edn"]
+                    :services "docs/docs-services.edn"}}
+
+  :nbeval {:exec-fn modular.system/start!
+           :exec-args {:run reval.task/eval-all-collections
+                       :config  ["docs/docs-config.edn"]
+                       :services "docs/task-services.edn"}}
+  :nblist {:exec-fn modular.system/start!
+           :exec-args {:run reval.task/print-all-collections
+                       :config  ["docs/docs-config.edn"]
+                       :services "docs/task-services.edn"}}}}
