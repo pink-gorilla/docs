@@ -1,0 +1,6 @@
+{:name "docs"
+ :lazy true
+ :depends-on #{:reval-ui}
+ :cljs-routes {""  reval.page.viewer/viewer-page}
+;
+ }
