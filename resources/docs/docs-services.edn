@@ -7,6 +7,9 @@
 
   :exts {:start (extension/discover)}
 
+  :timbre {:start (modular.log/timbre-config!
+                  (:timbre/clj (deref (clip/ref :config))))}
+
   :webly {:start (webly.app.app/start-webly
                   (deref (clip/ref :config))
                   (:profile #ref [:modular]))
@@ -17,9 +20,7 @@
 
   :reval {:start (reval.config/set-config!
                   (:reval (deref (clip/ref :config))))}
-
-  :timbre {:start (modular.log/timbre-config!
-                   (:timbre/clj (deref (clip/ref :config))))}
+  
   :nrepl {;:pre-start (spit ".nrepl-port" (str 9100))
           :start (nrepl.server/start-server
                   :bind "0.0.0.0"

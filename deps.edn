@@ -1,25 +1,25 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.5.662"}
-        org.pinkgorilla/pinkie {:mvn/version "0.5.231"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.5.674"}
+        org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.2.7"}
         org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         ;; dev tools/testing
-        org.pinkgorilla/reval {:mvn/version "0.6.146"}
+        org.pinkgorilla/reval {:mvn/version "0.6.151"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
-        org.pinkgorilla/ui-binaryclock  {:mvn/version "0.0.14"}
+        org.pinkgorilla/ui-binaryclock  {:mvn/version "0.2.19"}
         ;; "ui design in general"
-        org.pinkgorilla/ui-repl {:mvn/version "0.1.95"} ; reagent, format, page-nav,...
+        org.pinkgorilla/ui-repl {:mvn/version "0.1.104"} ; reagent, format, page-nav,...
         org.pinkgorilla/ui-tailwind {:mvn/version "0.0.5"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.0.3"}
-        org.pinkgorilla/ui-site {:mvn/version "0.0.29"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.44"} ; react-spaces rnd ...
+        org.pinkgorilla/ui-site {:mvn/version "0.0.30"} ; menu
+        org.pinkgorilla/ui-input {:mvn/version "0.2.45"} ; react-spaces rnd ...
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
-        org.pinkgorilla/ui-highlightjs {:mvn/version "0.0.9"}
+        org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.16"}
         ;; "tables"
-        org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.562"} ; sci dep
+        org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.564"}
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
         org.pinkgorilla/ui-aggrid {:mvn/version "0.1.22"}
         org.pinkgorilla/reagent-table {:mvn/version "0.0.14"}
@@ -31,7 +31,7 @@
         org.pinkgorilla/ui-leaflet {:mvn/version "0.1.21"}
         org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
         org.pinkgorilla/ui-sparklines {:mvn/version "0.0.4"}
-        org.pinkgorilla/ui-video {:mvn/version "0.2.8"} ; react-player clojure-compiler issue, youtube-player ok
+        org.pinkgorilla/ui-video {:mvn/version "0.2.9"} ; react-player clojure-compiler issue, youtube-player ok
 
         ;org.pinkgorilla/ui-math {:mvn/version "0.0.7"}
         ; non lazy deps
@@ -75,6 +75,7 @@
                        :config  ["docs/docs-config.edn"]
                        :services "docs/task-services.edn"}}
   
+  ;; debugging
   
   :show-public {:exec-fn public-res/show-public
                 :extra-paths ["dev"]}

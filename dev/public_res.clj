@@ -1,17 +1,12 @@
 (ns public-res
-  (:require 
+  (:require
    [clojure.pprint :refer [print-table]]
-     [modular.resource.explore :refer [describe-recursive-files]]  
-   )
-  )
-
+   [modular.resource.explore :refer [describe-recursive-files]]))
 
 (defn show-public [_]
-  (-> (describe-recursive-files "public") 
+  (-> (describe-recursive-files "public")
       print-table
       ;println
-      )
-  
-  )
+      ))
 
  
