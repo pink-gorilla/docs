@@ -1,15 +1,6 @@
-{:build {:disabled-extensions #{; extensions using sci-configs will not work in webly.
-                                ;"reagent" "re-frame"
-                                ;"funcool-promesa"
-                                ;"applied-science.js-interop"
-                                ;"cljs-pprint-frisk"
-                                ; webly2 is now in webly. needs to be removed from ui-repl.
-                                ;"webly2"
-                                ;"ui-repl"
-                                ;"cljs-ajax"
-                                }}
+{:build {:disabled-extensions #{}}
 
-  :timbre/clj {:min-level [[#{"org.eclipse.jetty.*"} :warn]
+ :timbre/clj {:min-level [[#{"org.eclipse.jetty.*"} :warn]
                           [#{"*"} :info]]
               :appenders {:default {:type :console-color}
                           :file {:type :file
@@ -21,7 +12,7 @@
                                      :context :scheduled-data-import
                                      :path "target/workflow.log"
                                      :pattern :monthly}}}
-  
+
  :timbre/cljs {:min-level [[#{"pinkgorilla.nrepl.*"} :warn]
                            [#{"org.eclipse.jetty.*"} :warn]
                            [#{"webly.*"} :info]
