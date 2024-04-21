@@ -1,7 +1,8 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.5.674"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.5.683"}
+        org.pinkgorilla/goldly {:mvn/version "0.7.670"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.2.7"}
         org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
@@ -11,7 +12,7 @@
         org.pinkgorilla/ui-binaryclock  {:mvn/version "0.2.19"}
         ;; "ui design in general"
         org.pinkgorilla/ui-repl {:mvn/version "0.1.104"} ; reagent, format, page-nav,...
-        org.pinkgorilla/ui-tailwind {:mvn/version "0.0.5"}
+        org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.0.3"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.30"} ; menu
         org.pinkgorilla/ui-input {:mvn/version "0.2.45"} ; react-spaces rnd ...
@@ -25,8 +26,8 @@
         org.pinkgorilla/reagent-table {:mvn/version "0.0.14"}
         org.pinkgorilla/options {:mvn/version "0.0.10"}
         ; ""charts"
-        org.pinkgorilla/ui-vega {:mvn/version "0.3.219"}
-        org.pinkgorilla/ui-highcharts {:mvn/version "0.0.28"}
+        org.pinkgorilla/ui-vega {:mvn/version "0.3.220"}
+        org.pinkgorilla/ui-highcharts {:mvn/version "0.0.29"}
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
         org.pinkgorilla/ui-leaflet {:mvn/version "0.1.21"}
         org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
