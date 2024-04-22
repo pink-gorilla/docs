@@ -1,7 +1,7 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.5.685"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.5.686"}
         org.pinkgorilla/goldly {:mvn/version "0.7.671"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.2.8"}
