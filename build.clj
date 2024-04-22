@@ -14,8 +14,6 @@
              :version version
              :src-pom "pom-template.xml"
              :transitive true)
-      ;(bb/run-tests)
-      ;(bb/clean)
       (bb/jar)))
 
 (defn deploy "Deploy the JAR to Clojars." [opts]

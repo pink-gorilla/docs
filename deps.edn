@@ -67,6 +67,8 @@
                     :config  ["docs/docs-config.edn"]
                     :services "docs/docs-services.edn"}}
 
+  :viewer {:extra-paths ["static"]}
+
   :nbeval {:exec-fn modular.system/start!
            :exec-args {:run reval.task/eval-all-collections
                        :config  ["docs/docs-config.edn"]

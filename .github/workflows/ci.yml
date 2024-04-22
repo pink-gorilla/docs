@@ -37,5 +37,7 @@ jobs:
       run: |
         git config --global user.email "ci@pinkgorilla.org"
         git config --global user.name "CI/CD"
+        clojure -X:webly:npm-install
+        clojure -X:webly:release-adv
         clojure -T:build jar
         clojure -T:build deploy
