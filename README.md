@@ -19,15 +19,8 @@
 Notebook viewer with examples how to use ui render functions 
 is on [Docs Github Pages](https://pink-gorilla.github.io/docs/)
 
-## goldly-docs - use-cases
+## docs - used by:
 
-You need to include the **docs** artefact, which already includes many ui-renderers 
-and contains a pre-built javascript bundle. 
-
-You can:
-- add custom pages to goldly-docs easily.
-- use your clj functions to render ui visualizations.
-
-- [demo goldly](https://github.com/pink-gorilla/demo-goldly) Please see goldly-demo for how to use it.
+- [demo goldly](https://github.com/pink-gorilla/demo) Please see demo for how to use it.
 - [quanta](https://github.com/clojure-quant/quanta) quantitative backtesting framework
 - [EDGAR](https://github.com/clojure-quant/edgar) visualise mutual fund holdings
