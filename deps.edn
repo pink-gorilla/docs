@@ -29,7 +29,7 @@
         org.pinkgorilla/ui-vega {:mvn/version "0.3.220"}
         org.pinkgorilla/ui-highcharts {:mvn/version "0.0.29"}
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
-        org.pinkgorilla/ui-leaflet {:mvn/version "0.1.21"}
+        org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
         org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
         org.pinkgorilla/ui-sparklines {:mvn/version "0.2.7"}
         org.pinkgorilla/ui-video {:mvn/version "0.2.9"} ; react-player clojure-compiler issue, youtube-player ok
