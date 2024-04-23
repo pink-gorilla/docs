@@ -32,7 +32,7 @@
         org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
         org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
         org.pinkgorilla/ui-sparklines {:mvn/version "0.2.7"}
-        org.pinkgorilla/ui-video {:mvn/version "0.2.9"} ; react-player clojure-compiler issue, youtube-player ok
+        org.pinkgorilla/ui-video {:mvn/version "0.2.10"} ; react-player clojure-compiler issue, youtube-player ok
 
         ;org.pinkgorilla/ui-math {:mvn/version "0.0.7"}
         ; non lazy deps
