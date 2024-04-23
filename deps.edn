@@ -1,24 +1,24 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.5.686"}
-        org.pinkgorilla/goldly {:mvn/version "0.7.675"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.5.688"}
+        org.pinkgorilla/goldly {:mvn/version "0.7.676"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
-        org.pinkgorilla/clj-service {:mvn/version "0.2.8"}
+        org.pinkgorilla/clj-service {:mvn/version "0.2.9"}
         org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         ;; dev tools/testing
-        org.pinkgorilla/reval {:mvn/version "0.6.151"}
+        org.pinkgorilla/reval {:mvn/version "0.6.159"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
         org.pinkgorilla/ui-repl {:mvn/version "0.1.105"} ; reagent, format, page-nav,...
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
-        org.pinkgorilla/ui-site {:mvn/version "0.0.30"} ; menu
+        org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
         org.pinkgorilla/ui-input {:mvn/version "0.2.45"} ; react-spaces rnd ...
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
-        org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.18"}
+        org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.564"}
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
