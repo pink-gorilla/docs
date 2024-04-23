@@ -21,6 +21,6 @@ is on [Docs Github Pages](https://pink-gorilla.github.io/docs/)
 
 ## docs - used by:
 
-- [demo goldly](https://github.com/pink-gorilla/demo) Please see demo for how to use it.
+- [demo](https://github.com/pink-gorilla/demo) Please see demo for how to use it.
 - [quanta](https://github.com/clojure-quant/quanta) quantitative backtesting framework
 - [EDGAR](https://github.com/clojure-quant/edgar) visualise mutual fund holdings
