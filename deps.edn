@@ -2,7 +2,7 @@
          "resources"
          "target/webly"]
  :deps {org.pinkgorilla/webly {:mvn/version "0.5.689"}
-        org.pinkgorilla/goldly {:mvn/version "0.7.676"}
+        org.pinkgorilla/goldly {:mvn/version "0.7.677"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.2.14"}
         org.pinkgorilla/oauth2 {:mvn/version "0.0.25"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
@@ -15,7 +15,7 @@
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.45"} ; react-spaces rnd ...
+        org.pinkgorilla/ui-input {:mvn/version "0.2.47"} ; react-spaces rnd ...
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
         org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
