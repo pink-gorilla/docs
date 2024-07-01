@@ -11,10 +11,8 @@
 
   :exts {:start (extension/discover)}
 
-  :permission {:start (modular.permission.core/start-permissions
-                       {} ; empty users map. users only are needed if oauth2 module gets loaded, 
-                          ; because without identity-token users cannot be "logged in"
-                       )}
+  ; empty map means no users are configured, so always permissioned.
+  :permission {:start (modular.permission.core/start-permissions {})}
 
   :clj-service {:start (clj-service.core/start-clj-services
                         (clip/ref :permission)

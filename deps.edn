@@ -39,8 +39,8 @@
         ;org.pinkgorilla/ui-quil  {:mvn/version "0.1.7"} ; not bundeled (too big)
 
         ; run by default in docs-services
-        nrepl/nrepl {:mvn/version "1.0.0"}
-        cider/cider-nrepl {:mvn/version "0.28.3"}}
+        nrepl/nrepl {:mvn/version "1.2.0"}
+        cider/cider-nrepl {:mvn/version "0.49.1"}}
 
  :aliases
  {:build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}
