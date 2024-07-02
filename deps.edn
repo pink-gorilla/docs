@@ -11,7 +11,7 @@
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
-        org.pinkgorilla/ui-repl {:mvn/version "0.1.106"} ; reagent, format, page-nav,...
+        org.pinkgorilla/ui-repl {:mvn/version "0.1.107"} ; reagent, format, page-nav,...
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
