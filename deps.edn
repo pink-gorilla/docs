@@ -2,13 +2,13 @@
          "resources"
          "target/webly"]
  :deps {org.pinkgorilla/webly {:mvn/version "0.7.694"}
-        org.pinkgorilla/goldly {:mvn/version "0.7.682"}
+        org.pinkgorilla/goldly {:mvn/version "0.7.683"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.3.20"}
         org.pinkgorilla/oauth2 {:mvn/version "0.2.29"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         ;; dev tools/testing
-        org.pinkgorilla/reval {:mvn/version "0.7.162"} ; currently also in goldly.
+        org.pinkgorilla/reval {:mvn/version "0.7.163"} ; currently also in goldly.
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
