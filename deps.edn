@@ -2,13 +2,13 @@
          "resources"
          "target/webly"]
  :deps {org.pinkgorilla/webly {:mvn/version "0.7.694"}
-        org.pinkgorilla/goldly {:mvn/version "0.7.680"}
+        org.pinkgorilla/goldly {:mvn/version "0.7.681"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/clj-service {:mvn/version "0.3.20"}
         org.pinkgorilla/oauth2 {:mvn/version "0.2.29"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         ;; dev tools/testing
-        org.pinkgorilla/reval {:mvn/version "0.7.160"}
+        org.pinkgorilla/reval {:mvn/version "0.7.161"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
@@ -16,7 +16,7 @@
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.47"} ; react-spaces rnd ...
+        org.pinkgorilla/ui-input {:mvn/version "0.2.48"} ; react-spaces rnd ...
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
         org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
@@ -26,7 +26,7 @@
         org.pinkgorilla/ui-aggrid {:mvn/version "0.1.22"}
         org.pinkgorilla/reagent-table {:mvn/version "0.0.14"}
         org.pinkgorilla/options {:mvn/version "0.0.10"}
-        ; ""charts"
+        ; "charts"
         org.pinkgorilla/ui-vega {:mvn/version "0.3.220"}
         org.pinkgorilla/ui-highcharts {:mvn/version "0.0.29"}
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
