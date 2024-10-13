@@ -24,17 +24,11 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.564"}
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        ;org.pinkgorilla/ui-aggrid {:mvn/version "0.1.22"} ;aggrid is now in reagent-table.
-        ;org.pinkgorilla/reagent-table {:mvn/version "0.2.22"} 
-        ;org.pinkgorilla/reagent-table {:mvn/version "0.2.24"} 
-        org.pinkgorilla/reagent-table {:mvn/version "0.2.56"} ; now with ag-grid, highcharts and tml-ds-cljs
+        org.pinkgorilla/reagent-table {:mvn/version "0.2.57"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
         io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.15"} ; tmlds transit encoding
-        
         org.pinkgorilla/options {:mvn/version "0.0.10"}
         ; "charts"
-        ;org.pinkgorilla/ui-vega {:mvn/version "0.3.220"}
         org.pinkgorilla/ui-vega {:mvn/version "0.3.221"}
-        ;org.pinkgorilla/ui-highcharts {:mvn/version "0.0.29"} ; highcharts is now in reagent-table
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
         org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
         org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
