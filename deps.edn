@@ -14,6 +14,9 @@
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
         org.pinkgorilla/ui-repl {:mvn/version "0.1.109"} ; reagent, format, page-nav,...
+        ;; todo: change ui-repl to ui-tools 
+        ;; and move stuff form ui-input here, and from pinkie.
+        
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
@@ -24,7 +27,7 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.564"}
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.2.57"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
+        org.pinkgorilla/reagent-table {:mvn/version "0.2.58"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
         io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.15"} ; tmlds transit encoding
         org.pinkgorilla/options {:mvn/version "0.0.10"}
         ; "charts"
