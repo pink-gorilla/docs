@@ -13,23 +13,23 @@
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
-        org.pinkgorilla/ui-repl {:mvn/version "0.1.109"} ; reagent, format, page-nav,...
+        org.pinkgorilla/ui-repl {:mvn/version "0.1.110"} ; reagent, format, page-nav,...
         ;; todo: change ui-repl to ui-tools 
         ;; and move stuff form ui-input here, and from pinkie.
         
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.48"} ; react-spaces rnd ...
+        org.pinkgorilla/ui-input {:mvn/version "0.2.59"} ; react-spaces rnd ... ui-layout is better name.
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
         org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
         ;; "tables"
-        org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.564"}
+        org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
         org.pinkgorilla/reagent-table {:mvn/version "0.2.58"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
         io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.15"} ; tmlds transit encoding
-        org.pinkgorilla/options {:mvn/version "0.0.10"}
+        org.pinkgorilla/options {:mvn/version "0.0.12"}
         ; "charts"
         org.pinkgorilla/ui-vega {:mvn/version "0.3.221"}
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
