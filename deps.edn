@@ -20,7 +20,7 @@
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.59"} ; react-spaces rnd ... ui-layout is better name.
+        org.pinkgorilla/ui-input {:mvn/version "0.2.61"} ; react-spaces rnd ... ui-layout is better name.
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
         org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
