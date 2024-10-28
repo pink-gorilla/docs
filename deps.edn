@@ -1,7 +1,7 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.7.702"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.7.703"}
         org.pinkgorilla/goldly {:mvn/version "0.7.683"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/modular {:mvn/version "0.2.61"}
@@ -9,25 +9,26 @@
         org.pinkgorilla/oauth2 {:mvn/version "0.2.29"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         ;; dev tools/testing
-        org.pinkgorilla/reval {:mvn/version "0.7.164"} ; currently also in goldly.
+        org.pinkgorilla/reval {:mvn/version "0.7.165"} ; currently also in goldly.
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
         org.pinkgorilla/ui-repl {:mvn/version "0.1.110"} ; reagent, format, page-nav,...
+        
         ;; todo: change ui-repl to ui-tools 
         ;; and move stuff form ui-input here, and from pinkie.
         
         org.pinkgorilla/ui-tailwind {:mvn/version "0.1.8"}
         org.pinkgorilla/ui-fonts {:mvn/version "0.2.5"}
         org.pinkgorilla/ui-site {:mvn/version "0.0.31"} ; menu
-        org.pinkgorilla/ui-input {:mvn/version "0.2.61"} ; react-spaces rnd ... ui-layout is better name.
+        org.pinkgorilla/ui-input {:mvn/version "0.2.62"} ; react-spaces rnd ... ui-layout is better name.
         ;; "code-editor/viewer"
         org.pinkgorilla/ui-codemirror {:mvn/version "0.1.48"}
         org.pinkgorilla/ui-highlightjs {:mvn/version "0.1.19"}
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.2.58"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
+        org.pinkgorilla/reagent-table {:mvn/version "0.3.64"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
         io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.15"} ; tmlds transit encoding
         org.pinkgorilla/options {:mvn/version "0.0.12"}
         ; "charts"
