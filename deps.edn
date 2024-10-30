@@ -28,7 +28,7 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.3.75"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
+        org.pinkgorilla/reagent-table {:mvn/version "0.3.76"} ; ag-grid, cheetah-grid, highcharts and tml-ds-cljs
         io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.15"} ; tmlds transit encoding
         org.pinkgorilla/options {:mvn/version "0.0.12"}
         ; "charts"
