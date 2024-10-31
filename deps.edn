@@ -13,7 +13,7 @@
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
-        org.pinkgorilla/ui-repl {:mvn/version "0.1.110"} ; reagent, format, page-nav,...
+        org.pinkgorilla/ui-repl {:mvn/version "0.1.111"} ; reagent, format, page-nav,...
         
         ;; todo: change ui-repl to ui-tools 
         ;; and move stuff form ui-input here, and from pinkie.
