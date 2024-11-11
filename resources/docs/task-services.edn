@@ -5,9 +5,10 @@
   :exts {:start (extension/discover)}
 
   :reval {:start (reval.core/start-reval
-                  {:config (:reval (deref (clip/ref :config)))
-                   :clj  nil
-                   :reval-role nil})}
+                  (merge
+                   (:reval (deref (clip/ref :config)))
+                   {:clj  nil
+                    :reval-role nil}))}
 
 ;  
   }}

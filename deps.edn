@@ -9,7 +9,7 @@
         org.pinkgorilla/oauth2 {:mvn/version "0.2.29"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         org.pinkgorilla/dali {:mvn/version "0.1.30"}
-        org.pinkgorilla/reval {:mvn/version "0.9.169"}
+        org.pinkgorilla/reval {:mvn/version "0.9.170"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
@@ -71,11 +71,7 @@
   :viewer {:extra-paths ["static"]}
 
   :nbeval {:exec-fn modular.system/start!
-           :exec-args {:run reval.task/eval-all-collections
-                       :config  ["docs/docs-config.edn"]
-                       :services "docs/task-services.edn"}}
-  :nblist {:exec-fn modular.system/start!
-           :exec-args {:run reval.task/print-all-collections
+           :exec-args {:run demo.task/eval-all
                        :config  ["docs/docs-config.edn"]
                        :services "docs/task-services.edn"}}
   

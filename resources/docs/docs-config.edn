@@ -22,8 +22,7 @@
 
  :reval {:rdocument  {:fpath "target/webly/public/rdocument"
                       :rpath "/r/rdocument"}
-         :collections {:user {:clj "user/notebook/"}
-                       :demo {:clj "demo/notebook/" ; embedded notebooks in jars.
+         :collections {:demo {:clj "demo/notebook/" ; embedded notebooks in jars.
                               :cljs "demo/notebook/"}}}
 
  :keybindings [{:kb "alt-g k",
