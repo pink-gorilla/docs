@@ -20,11 +20,11 @@
 
  :scratchpad {:tap true}
 
- :reval {:rdocument  {:storage-root "target/webly/public/rdocument/"
-                      :url-root "/api/rdocument/file/"}
-         :collections {:user [:clj "user/notebook/"]
-                       :demo [:clj "demo/notebook/"]
-                       :demo-cljs [:cljs "demo/notebook/"]}}
+ :reval {:rdocument  {:fpath "target/webly/public/rdocument"
+                      :rpath "/r/rdocument"}
+         :collections {:user {:clj "user/notebook/"}
+                       :demo {:clj "demo/notebook/" ; embedded notebooks in jars.
+                              :cljs "demo/notebook/"}}}
 
  :keybindings [{:kb "alt-g k",
                 :handler [:palette/show],
