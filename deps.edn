@@ -26,13 +26,12 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.3.79"}; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
-        io.github.clojure-quant/techml-dataset-cljs {:mvn/version "0.1.16"} ; tmlds transit encoding
+        org.pinkgorilla/reagent-table {:mvn/version "0.3.83"} ; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
+        org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"} ; move to reagent-table
         org.pinkgorilla/options {:mvn/version "0.0.13"}
         ; "charts"
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
         org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
-        org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"}
         org.pinkgorilla/ui-sparklines {:mvn/version "0.2.7"}
         org.pinkgorilla/ui-video {:mvn/version "0.2.10"} ; react-player clojure-compiler issue, youtube-player ok
 
