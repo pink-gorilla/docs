@@ -26,8 +26,7 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.3.83"} ; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
-        org.pinkgorilla/ui-echarts {:mvn/version "0.1.7"} ; move to reagent-table
+        org.pinkgorilla/reagent-table {:mvn/version "0.3.85"}; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
         org.pinkgorilla/options {:mvn/version "0.0.13"}
         ; "charts"
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
