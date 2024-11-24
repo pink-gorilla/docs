@@ -9,7 +9,7 @@
         org.pinkgorilla/oauth2 {:mvn/version "0.2.29"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         org.pinkgorilla/dali {:mvn/version "0.1.30"}
-        org.pinkgorilla/reval {:mvn/version "0.9.171"}
+        org.pinkgorilla/reval {:mvn/version "0.9.176"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
@@ -26,7 +26,7 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.3.85"}; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
+        org.pinkgorilla/reagent-table {:mvn/version "0.3.87"}; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
         org.pinkgorilla/options {:mvn/version "0.0.13"}
         ; "charts"
         org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
