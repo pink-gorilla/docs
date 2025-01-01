@@ -1,12 +1,12 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.8.707"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.8.708"}
         org.pinkgorilla/goldly {:mvn/version "0.7.684"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
         org.pinkgorilla/modular {:mvn/version "0.2.61"}
         org.pinkgorilla/clj-service {:mvn/version "0.4.21"}
-        org.pinkgorilla/oauth2 {:mvn/version "0.2.31"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
+        org.pinkgorilla/oauth2 {:mvn/version "0.2.32"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
         org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
         org.pinkgorilla/dali {:mvn/version "0.1.30"}
         org.pinkgorilla/reval {:mvn/version "0.9.177"}
