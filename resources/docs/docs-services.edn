@@ -4,10 +4,11 @@
  {; the print services can be comment out. Just useful for testing.
   :print-modular-env {:start (println "modular environment: " #ref [:modular])}
 
-  :config {:start (modular.config/load-config! (:config #ref [:modular]))}
+  :config1 {:start (modular.config/load-config! (:config #ref [:modular]))}
+  :config {:start (deref (clip/ref :config1))}
 
   :timbre {:start (modular.log/timbre-config!
-                   (:timbre/clj (deref (clip/ref :config))))}
+                   (:timbre/clj (clip/ref :config)))}
 
   :exts {:start (extension/discover)}
 
@@ -21,13 +22,22 @@
   :reval {:start (reval.core/start-reval
                   (merge {:clj  (clip/ref :clj-service)
                           :reval-role nil}
-                         (:reval (deref (clip/ref :config)))))}
+                         (:reval (clip/ref :config))))}
 
-  :webly {:start (webly.app.app/start-webly
-                  (clip/ref :exts)
-                  (deref (clip/ref :config))
+  :exec {:start (flowy.executor/start-executor
+                 {:env {}
+                  :exts (clip/ref :exts)}
+                 (:services (clip/ref :config)))}
+  
+  :flowy {:start (flowy.reflower/start-reflower (clip/ref :exec))}
+     
+  :webly {:start (webly.spa/start-webly
+                  {:exts (clip/ref :exts)
+                   :ctx {:flowy (clip/ref :flowy)}}
+                  (clip/ref :config)
                   (:profile #ref [:modular]))
-          :stop (webly.app.app/stop-webly this)}
+          :stop (webly.spa/stop-webly this)}
+  
 
   :nrepl {;:pre-start (spit ".nrepl-port" (str 9100))
           :start (nrepl.server/start-server

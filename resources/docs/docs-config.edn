@@ -4,13 +4,13 @@
                           [#{"*"} :info]]
               :appenders {:default {:type :console-color}
                           :file {:type :file
-                                 :fname "target/file.log"}
+                                 :fname ".gorilla/file.log"}
                           :rolling {:type :file-rolling
-                                    :path "target/rolling.log"
+                                    :path ".gorilla/rolling.log"
                                     :pattern :monthly}
                           :workflow {:type :file-rolling-context
                                      :context :scheduled-data-import
-                                     :path "target/workflow.log"
+                                     :path ".gorilla/workflow.log"
                                      :pattern :monthly}}}
 
  :timbre/cljs {:min-level [[#{"pinkgorilla.nrepl.*"} :warn]
@@ -20,7 +20,7 @@
 
  :scratchpad {:tap true}
 
- :reval {:rdocument  {:fpath "target/webly/public/rdocument"
+ :reval {:rdocument  {:fpath ".gorilla/public/rdocument"
                       :rpath "/r/rdocument"}
          :collections {:demo {:clj "demo/notebook/" ; embedded notebooks in jars.
                               :cljs "demo/notebook/"}}}

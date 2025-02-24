@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm target -r
+rm .gorilla -r
 rm .shadow-cljs -r
 rm package.json
 rm package-lock.json

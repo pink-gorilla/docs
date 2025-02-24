@@ -1,15 +1,16 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.pinkgorilla/webly {:mvn/version "0.8.714"}
-        org.pinkgorilla/goldly {:mvn/version "0.7.684"}
+ :deps {org.pinkgorilla/webly {:mvn/version "0.9.717"}
+        org.pinkgorilla/goldly {:mvn/version "0.9.686"}
         org.pinkgorilla/pinkie {:mvn/version "0.5.232"}
-        org.pinkgorilla/modular {:mvn/version "0.2.61"}
-        org.pinkgorilla/clj-service {:mvn/version "0.4.21"}
-        org.pinkgorilla/oauth2 {:mvn/version "0.2.32"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
-        org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
-        org.pinkgorilla/dali {:mvn/version "0.1.30"}
-        org.pinkgorilla/reval {:mvn/version "0.9.177"}
+        org.pinkgorilla/modular {:mvn/version "0.2.67"}
+        org.pinkgorilla/clj-service {:mvn/version "0.4.23"}
+        org.pinkgorilla/oauth2 {:mvn/version "0.2.33"} ; oauth2 needs to be in docs, because of login-dialogs. rest can be loaded dynamically.
+        ;org.pinkgorilla/re-flow {:mvn/version "0.1.7"}
+        org.pinkgorilla/flowy {:mvn/version "0.1.28"}
+        org.pinkgorilla/dali {:mvn/version "0.2.31"}
+        org.pinkgorilla/reval {:mvn/version "0.10.179"}
         ;org.pinkgorilla/devtools {:mvn/version "0.0.18"}
         ;org.pinkgorilla/ui-binaryclock {:mvn/version "0.2.20"} ; binaryclock is useful for testing. 
         ;; "ui design in general"
@@ -26,18 +27,18 @@
         ;; "tables"
         org.pinkgorilla/ui-pprint-frisk {:mvn/version "0.6.565"} ; this is only frisk
         ;org.pinkgorilla/ui-reacttable {:mvn/version "0.0.6"} ; pinkie problem
-        org.pinkgorilla/reagent-table {:mvn/version "0.3.88"}; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
+        org.pinkgorilla/dali-table {:mvn/version "0.3.91"} ; ag-grid, cheetah-grid, highcharts, vega and tml-ds-cljs
         org.pinkgorilla/options {:mvn/version "0.0.16"}
         ; "charts"
-        org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.10"}
-        org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
+        org.pinkgorilla/ui-cytoscape {:mvn/version "0.1.11"}
+        ;org.pinkgorilla/ui-leaflet {:mvn/version "0.1.23"}
         org.pinkgorilla/ui-sparklines {:mvn/version "0.2.7"}
         org.pinkgorilla/ui-video {:mvn/version "0.2.10"} ; react-player clojure-compiler issue, youtube-player ok
-
+        
         ;org.pinkgorilla/ui-math {:mvn/version "0.0.7"}
         ; non lazy deps
         ;org.pinkgorilla/ui-quil  {:mvn/version "0.1.7"} ; not bundeled (too big)
-
+        
         ; run by default in docs-services
         nrepl/nrepl {:mvn/version "1.2.0"}
         cider/cider-nrepl {:mvn/version "0.49.1"}}
@@ -50,7 +51,7 @@
           :jvm-opts ["-Dmaven.wagon.rto=90000"]}
 
 ; demo ui
-  :webly {:exec-fn webly.app.app/webly-build
+  :webly {:exec-fn webly.spa/webly-build
           :exec-args {:config ["docs/docs-config.edn"]
                       :profile "npm-install"}}
 
@@ -65,17 +66,5 @@
         :exec-args {:profile "jetty"
                     :config  ["docs/docs-config.edn"]
                     :services "docs/docs-services.edn"}}
-
-  :viewer {:extra-paths ["static"]}
-
-  :nbeval {:exec-fn modular.system/start!
-           :exec-args {:run demo.task/eval-all
-                       :config  ["docs/docs-config.edn"]
-                       :services "docs/task-services.edn"}}
-  
-  ;; debugging
-  
-  :show-public {:exec-fn public-res/show-public
-                :extra-paths ["dev"]}
-  
+ 
   }}

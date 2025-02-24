@@ -50,15 +50,16 @@ jobs:
       - name: build gh-pages
         if: success()
         run: |
-          clojure -X:webly:npm-install:viewer
-          clojure -X:webly:release-adv:viewer
-          clojure -X:webly:static:viewer
+          cd static
+          clojure -X:webly:npm-install
+          clojure -X:webly:release-adv
+          clojure -X:webly:static
           clojure -X:nbeval
-          cp target/webly/public/rdocument target/static/r -r
+          cp .gorilla/public/rdocument .gorilla/static/r -r
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "target/static"
+          path: ".gorilla/static"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

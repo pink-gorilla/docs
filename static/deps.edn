@@ -1,0 +1,24 @@
+{:paths ["src" "resources"]
+ :deps {org.pinkgorilla/docs {:local/root ".." :deps/manifest :deps}}
+
+ :aliases {; notebook eval
+           :nbeval {:exec-fn modular.system/start!
+                    :exec-args {:run demo.task/eval-all
+                                :config  ["docs/docs-config.edn"]
+                                :services "docs/task-services.edn"}}
+           ; demo ui
+           :webly {:exec-fn webly.spa/webly-build
+                   :exec-args {:config ["docs/docs-config.edn"]
+                               :profile "npm-install"}}
+
+           :npm-install {:exec-args {:profile "npm-install"}}
+           :compile {:exec-args {:profile "compile"}}
+           :release {:exec-args {:profile "release"}}
+           :release-adv {:exec-args {:profile "release-adv"}}
+           :static {:exec-args {:profile "static"}}
+           :ci {:exec-args {:profile "ci"}}
+
+           :run {:exec-fn modular.system/start!
+                 :exec-args {:profile "jetty"
+                             :config  ["docs/docs-config.edn"]
+                             :services "docs/docs-services.edn"}}}}

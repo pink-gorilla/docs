@@ -9,6 +9,7 @@
 ## DEMO - Get Started
 - clone this repo
 ```
+    cd static
     clj -X:nbeval
     clj -X:webly:npm-install
     clj -X:webly:compile
@@ -24,3 +25,9 @@ is on [Docs Github Pages](https://pink-gorilla.github.io/docs/)
 - [demo](https://github.com/pink-gorilla/demo) Please see demo for how to use it.
 - [quanta](https://github.com/clojure-quant/quanta) quantitative backtesting framework
 - [EDGAR](https://github.com/clojure-quant/edgar) visualise mutual fund holdings
+
+
+
+
+|                              | org.pinkgorilla/oauth2           | 0.2.32      | 0.2.33      |
+|                              | org.pinkgorilla/reval            | 0.9.177     | 0.10.179    |
